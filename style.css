@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #FFFAF0;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#content {
+    margin-top: 20px;
+    background-color: #FFF5EE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#nameInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #66a3ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #content {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.white-background {
+    background-color: #fff; 
+  }
+  
