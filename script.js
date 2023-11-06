@@ -4,8 +4,13 @@ function checkEnter(event) {
     }
 }
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
 function checkName() {
-    var name = document.getElementById('nameInput').value;
+    var nameInput = document.getElementById('nameInput');
+    var name = capitalizeFirstLetter(nameInput.value);
     fetch('names.json')
         .then(response => response.json())
         .then(data => {
